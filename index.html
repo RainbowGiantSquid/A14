@@ -2,10 +2,16 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="English and maths tuition London website">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Dagmara Kukla">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/A14_logosq.png">
     <title>A14 Academics</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="testlogin.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Frank+Ruhl+Libre" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="testlogin.js"></script>
 </head>
 
@@ -18,19 +24,18 @@
             <li><a href="#courses">COURSES</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <li class="topnav-right"><a href="#signup">Sign up</a></li>
-            <li class="topnav-right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+            <li class="topnav-right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOG
+                    IN</button></li>
             <!-- ***********HAMBURGER MENU - CSS media query*********** -->
             <li class="hamburgerIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
         </ul>
     </nav>
     <div id="id01" class="modal">
-
         <form class="modal-content animate" action="/action_page.php">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <img src="images/A14_logo.png" alt="Avatar" class="avatar">
             </div>
-
             <div class="container">
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
@@ -53,6 +58,16 @@
     <div class="landingPage" id="home">
         <img class="landingImg" src="Images/mockup images/Sri_Lanka.jpg" alt="picture of school children at A14">
     </div>
+    <script>   // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 <footer>
@@ -61,7 +76,6 @@
         <li><a href="#about">ABOUT A14</a></li>
         <li><a href="#courses">COURSES</a></li>
         <li><a href="#contact">CONTACT</a></li>
-
         <li class="topnav-right"><a href="login.html">Log in</a></li>
         <li class="topnav-right"><a href="#signup">Sign up</a></li>
     </ul>
