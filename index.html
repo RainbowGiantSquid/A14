@@ -24,12 +24,13 @@
             <li><a href="#courses">COURSES</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <li class="topnav-right"><a href="#signup">Sign up</a></li>
-            <li class="topnav-right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOG
+            <li class="topnav-right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;height: 78px;">LOG
                     IN</button></li>
             <!-- ***********HAMBURGER MENU - CSS media query*********** -->
             <li class="hamburgerIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
         </ul>
     </nav>
+    <div class="loginPop">
     <div id="id01" class="modal">
         <form class="modal-content animate" action="/action_page.php">
             <div class="imgcontainer">
@@ -43,7 +44,7 @@
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
 
-                <button type="submit">Login</button>
+                <button class="buttonSubmit"type="submit">Login</button>
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
@@ -55,6 +56,7 @@
             </div>
         </form>
     </div>
+</div>
     <div class="landingPage" id="home">
         <img class="landingImg" src="Images/mockup images/Sri_Lanka.jpg" alt="picture of school children at A14">
     </div>
