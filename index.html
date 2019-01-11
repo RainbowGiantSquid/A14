@@ -10,20 +10,21 @@
     <link rel="shortcut icon" href="images/A14_logosq.png">
     <title>A14 Academics</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="testlogin.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Frank+Ruhl+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Frank+Ruhl+Libre|Mukta+Malar" rel="stylesheet">
     <script type="text/javascript" src="testlogin.js"></script>
 </head>
 
 <body>
+    <!-- ***********NAVIGATION MENU************* -->
     <nav>
         <ul class="topnav" id="dropdownClick">
-            <li class="topnav-logo"><img class="logo" src="images/A14_logo.png" alt="A14 logo"></li>
+            <li class="topnav-logo"><img class="logo" src="images/A14_logo.png" alt="A14 Academics logo"></li>
             <li class="topnav-academics"><a href="#home">ACADEMY</a></li>
-            <li><a href="#about">OUR STORY</a></li>
+            <li><a href="#about">ABOUT A14</a></li>
             <li><a href="#courses">COURSES</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <li class="topnav-right"><a href="#signup">Sign up</a></li>
+            <li class="topnav-right"><a href="signup.html">Sign up</a></li>
+            <!-- *************LAST MENU ITEM it's a buton with login window pop-up in JS************* -->
             <li class="topnav-right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;height: 78px;">LOG
                     IN</button></li>
             <!-- ***********HAMBURGER MENU - CSS media query*********** -->
@@ -31,34 +32,33 @@
         </ul>
     </nav>
     <div class="loginPop">
-    <div id="id01" class="modal">
-        <form class="modal-content animate" action="/action_page.php">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="images/A14_logo.png" alt="Avatar" class="avatar">
-            </div>
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="images/A14_logo.png" alt="A14 Academics logo" class="avatar">
+                </div>
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
 
-                <button class="buttonSubmit"type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
+                    <button class="buttonSubmit" type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
 
-            <div class="container" id="bottom">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-        </form>
-    </div>
-</div>
-    <div class="landingPage" id="home">
-        <img class="landingImg" src="Images/mockup images/Sri_Lanka.jpg" alt="picture of school children at A14">
+                <div class="container" id="bottom">
+                    <button type="button" onclick="location.href='signup.html';" .style.display='none'" class="
+                        signupbtn">SIGN
+                        UP</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
     </div>
     <script>   // Get the modal
         var modal = document.getElementById('id01');
@@ -70,6 +70,20 @@
             }
         }
     </script>
+    <!-- *******LANDING PAGE/ HOME******* -->
+    <section class="landingPage" id="home">
+        <img class="landingImg" src="images/mockup images/Sri_Lanka.jpg" alt="picture of school children at A14">
+    </section>
+    <section class="ourDifference" id="about">
+        <div class="container" id="about">
+            <h1>What's our difference?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
 
 </body>
 <footer>

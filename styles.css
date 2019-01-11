@@ -2,6 +2,7 @@
 
 nav, header, footer, {
     display: block;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
     font-family: 'Comfortaa', Helvetica, sans-serif;
     font-family: 'Frank Ruhl Libre', serif;
 }
@@ -69,7 +70,7 @@ ul.topnav li a {
     text-align: center;
     padding: 15px;
     text-transform: uppercase;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
     color: whitesmoke;
 }
 
@@ -91,6 +92,14 @@ ul.topnav-logo:hover {
 img.landingImg {
     max-width: 100%;
     min-width: 100%;
+    margin-top: 7px;
+}
+@media screen and (orientation: portrait) {
+    img.landingImg {
+        width: 40px;
+        height: 400px;
+        object-fit: cover;
+    }
 }
 
 /* HAMBURGER MENU */
@@ -131,6 +140,9 @@ ul.topnav li.hamburgerIcon {
         float: left;
         display: inline-flex;
     }
+    ul.topnav.responsive li a::after {
+        display: none;
+    }
     button {
         min-width: 100%;
         text-align: left;
@@ -140,6 +152,13 @@ ul.topnav li.hamburgerIcon {
     #bottom.container {
         padding: 0 16px 36px 16px;
         margin-bottom: 8px;
+    }
+    /* adjusting landing page image */
+}
+
+@media screen and (orientation: portrait) {
+    img.landingImg {
+        width: 2444px;
     }
 }
 
@@ -166,7 +185,7 @@ button {
     padding: 14px;
     border: none;
     cursor: pointer;
-    font-family:'Comfortaa', Helvetica, sans-serif;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
     font-size: 16px;
     width: 100%;
 }
@@ -182,11 +201,11 @@ button:hover {
 
 /* Extra styles for the cancel button */
 
-.cancelbtn {
+.signupbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
-    color: white;
+    background-color: #0A1C58;
+    color: #F79A00;
 }
 
 /* Center the image and position the close button */
@@ -236,7 +255,7 @@ span.psw {
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
-    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
     text-transform: uppercase;
     padding-top: 60px;
 }
@@ -249,6 +268,7 @@ span.psw {
     /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%;
+    max-width: 750px;
     /* Could be more or less, depending on screen size */
 }
 
@@ -264,11 +284,11 @@ span.psw {
 }
 
 .close:hover, .close:focus {
-    color: red;
+    color: #F79A00;
     cursor: pointer;
 }
 
-/* Add Zoom Animation */
+/* keyframes for the Zoom Animation */
 
 .animate {
     -webkit-animation: animatezoom 0.6s;
@@ -303,4 +323,52 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
+}
+
+/* ########general text styling######### */
+
+h1 {
+    color: white;
+    font-family: 'Frank Ruhl Libre', serif;
+    /* for responsive font sieze */
+    font-size: 9vmin; 
+    text-align: center;
+    line-height: 100%;
+}
+
+p {
+    color: white;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
+    font-size: 3.2vmin;
+    line-height: 120%;
+    margin: 0;
+}
+
+#about.ourDifference {
+    max-width: 100%;
+    margin: 0 8% 0 8%;
+}
+
+/* ##########FOOTER STYLING######### */
+
+footer {
+        color: white;
+        font-family: 'Mukta Malar', Helvetica, sans-serif;
+        font-size: 3.2vmin;
+        text-transform: capitalize;
+        line-height: 120%;
+        background: #0D0D0D;
+    }
+
+ul.footnav li {
+    list-style: none;
+    
+}
+ul.footnav li a {
+    color: white;
+        font-family: 'Mukta Malar', Helvetica, sans-serif;
+        font-size: 16px;
+        text-transform: capitalize;
+        line-height: 120%;
+
 }
