@@ -14,6 +14,7 @@ nav, header, footer, {
 body {
     line-height: 1;
     margin: 0;
+    text-align: center;
     background: #0A1C58;
     /* for super-old browsers */
     /* gradient for old browsers */
@@ -340,11 +341,22 @@ h1 {
     text-align: center;
     line-height: 100%;
 }
+h3 {
+    color: white;
+    font-family: 'Frank Ruhl Libre', serif;
+    /* for responsive font sieze */
+    font-size: 4vmin;
+    text-align: center;
+    line-height: 110%;
+
+}
+
 
 p {
     color: white;
     font-family: 'Mukta Malar', Helvetica, sans-serif;
-    font-size: 3.2vmin;
+    font-size: 2.8vmin;
+    text-align: left;
     line-height: 120%;
     margin: 0;
 }
@@ -358,14 +370,26 @@ section.textSection {
 
 /* percentage circle with css keyframes based on https://codepen.io/sergiopedercini/pen/jmKdbj */
 
-.flexWrapper {
+.flexContainer {
     display: flex;
-    flex-flow: row nowrap;
+    align-content: space-around;
+    align-items: baseline;
+    flex-direction: row;
 }
-
 .singleChart {
-    width: 33%;
-    justify-content: space-around;
+    width: 30%;
+    margin-bottom: 1%;
+    padding: 0 2% 2%;
+
+}
+@media screen and (max-width: 750px) {
+    .flexContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .singleChart {
+        width: 86%;
+    }
 }
 
 .circularChart {

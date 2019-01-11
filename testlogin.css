@@ -1,6 +1,4 @@
 
-/* ALL FROM https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal */
-
 body {
     font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -16,7 +14,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
+/* Set a style for main buttons */
 button {
   background-color: #F79A00;
   color: white;
@@ -58,7 +56,7 @@ span.psw {
   font-size: 14px;
   float: right;
 }
-
+/* Bulid using code modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal  */
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -94,7 +92,7 @@ span.psw {
 
 .close:hover,
 .close:focus {
-  color: red;
+  color: #F79A00;
   cursor: pointer;
 }
 
