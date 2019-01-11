@@ -1,5 +1,9 @@
 /* defoult setup for the page */
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav, header, footer, {
     display: block;
     font-family: 'Mukta Malar', Helvetica, sans-serif;
@@ -94,6 +98,7 @@ img.landingImg {
     min-width: 100%;
     margin-top: 7px;
 }
+
 @media screen and (orientation: portrait) {
     img.landingImg {
         width: 40px;
@@ -331,7 +336,7 @@ h1 {
     color: white;
     font-family: 'Frank Ruhl Libre', serif;
     /* for responsive font sieze */
-    font-size: 9vmin; 
+    font-size: 9vmin;
     text-align: center;
     line-height: 100%;
 }
@@ -344,31 +349,92 @@ p {
     margin: 0;
 }
 
-#about.ourDifference {
+/* #######About section######## */
+
+section.textSection {
     max-width: 100%;
     margin: 0 8% 0 8%;
+}
+
+/* percentage circle with css keyframes based on https://codepen.io/sergiopedercini/pen/jmKdbj */
+
+.flexWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.singleChart {
+    width: 33%;
+    justify-content: space-around;
+}
+
+.circularChart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circleBg {
+    opacity: 0.15;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: square;
+    animation: progress 12s ease-out infinite;
+}
+
+@keyframes progress {
+    40% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circularChart.orange .circle {
+    stroke: #ff9f00;
+}
+
+.circularChart.green .circle {
+    stroke: #4CC790;
+}
+
+.circularChart.blue .circle {
+    stroke: #3c9ee5;
+}
+
+.percentage {
+    fill: white;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
 }
 
 /* ##########FOOTER STYLING######### */
 
 footer {
-        color: white;
-        font-family: 'Mukta Malar', Helvetica, sans-serif;
-        font-size: 3.2vmin;
-        text-transform: capitalize;
-        line-height: 120%;
-        background: #0D0D0D;
-    }
+    color: white;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
+    font-size: 3.2vmin;
+    text-transform: capitalize;
+    line-height: 120%;
+}
+
+.footnav {
+    margin: 0;
+    padding: 0;
+}
 
 ul.footnav li {
     list-style: none;
-    
+    background-color: #0D0D0D;
 }
+
 ul.footnav li a {
     color: white;
-        font-family: 'Mukta Malar', Helvetica, sans-serif;
-        font-size: 16px;
-        text-transform: capitalize;
-        line-height: 120%;
-
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 120%;
 }
