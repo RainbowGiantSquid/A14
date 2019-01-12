@@ -262,6 +262,7 @@ span.psw {
     /* Black w/ opacity */
     font-family: 'Mukta Malar', Helvetica, sans-serif;
     text-transform: uppercase;
+    text-align: left;
     padding-top: 60px;
 }
 
