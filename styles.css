@@ -503,6 +503,12 @@ h2 {
     margin-left: 12%;
 }
 
+@media screen and (max-width: 750px) {
+    .d-block {
+        margin-block-end: 3%;
+    }
+}
+
 /* ##########carousel position######### */
 
 #carouselExampleIndicators.carousel .slide {
