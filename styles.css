@@ -37,7 +37,7 @@ body {
 nav {
     margin: 0;
     line-height: 3;
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     min-width: 100%;
 }
@@ -63,6 +63,7 @@ ul.topnav li.topnav-logo {
 ul.topnav img.logo {
     padding: 10px 10px 0 12px;
     max-height: 60px;
+    box-sizing: content-box;
 }
 
 ul.topnav li.topnav-right {
@@ -97,6 +98,7 @@ ul.topnav-logo:hover {
 img.landingImg {
     max-width: 100%;
     min-width: 100%;
+    z-index: -1;
 }
 
 @media screen and (orientation: portrait) {
@@ -337,7 +339,7 @@ h1 {
     color: white;
     font-family: 'Frank Ruhl Libre', serif;
     /* for responsive font sieze */
-    font-size: 9vmin;
+    font-size: 7vmin;
     text-align: center;
     line-height: 100%;
 }
@@ -345,7 +347,7 @@ h3 {
     color: white;
     font-family: 'Frank Ruhl Libre', serif;
     /* for responsive font sieze */
-    font-size: 4vmin;
+    font-size: 5vmin;
     text-align: center;
     line-height: 110%;
 
@@ -355,7 +357,7 @@ h3 {
 p {
     color: white;
     font-family: 'Mukta Malar', Helvetica, sans-serif;
-    font-size: 2.8vmin;
+    font-size: 3.5vmin;
     text-align: left;
     line-height: 120%;
     margin: 0;
@@ -462,3 +464,60 @@ ul.footnav li a {
     text-transform: capitalize;
     line-height: 120%;
 }
+
+/* #######CAROUSEL STYLING####### */
+
+.maincarousel {
+    margin-top: -70%;
+}
+
+#carouselExampleIndicators.carousel {
+    z-index: 2;
+}
+
+.carousel-indicators li {
+    background-color: #0A1C58;
+}
+.d-block {
+    max-width: 75%;
+    margin-left: 10%;
+}
+
+h2 {
+    color: #F79A00;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 5vw;
+    text-align: center;
+    margin: 0;
+
+}
+.d-block {
+    max-width: 75%;
+    margin-left: 12%;
+    margin-block-end: -1%;
+    margin-block-start: -1%;
+}
+
+.d-md-block {
+    max-width: 75%;
+    margin-left: 12%;
+}
+
+/* ##########carousel position######### */
+
+#carouselExampleIndicators.carousel .slide {
+    position: absolute;
+    margin-top: -30%
+}
+
+.carousel  {
+    position: initial;
+}
+
+.carousel-caption {
+    right: 0;
+    left: 0;
+    bottom: 25px;
+    padding: 6% 2%;
+}
+

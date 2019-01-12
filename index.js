@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
     }
   };
 });
-
 function dropdownMenu() {
     var x = document.getElementById("dropdownClick");
     if (x.className === "topnav") {
@@ -18,5 +17,15 @@ function dropdownMenu() {
     }
     else {
         x.className = "topnav";
-    }
+    } 
 }
+console.log("HELLO");
+
+$('.topnav li a').click(function() {
+  console.log("$('#dropdownClick').hasClass('responsive')",$('#dropdownClick').hasClass('responsive'))
+  if ($('#dropdownClick').hasClass('responsive')) {
+      $('#dropdownClick').removeClass(' responsive');
+  } else {
+      $('#dropdownClick').addClass(' responsive');
+  }
+  });
