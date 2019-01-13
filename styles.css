@@ -256,8 +256,8 @@ button:hover {
 /* Extra styles for the cancel button */
 
 .signupbtn {
-    background-color: #0A1C58;
-    color: #F79A00;
+    background-color: #F79A00;
+    color: white;
 }
 
 /* Center the image and position the close button */
@@ -525,9 +525,37 @@ h2 {
     padding: 6% 2%;
 }
 
+/* #############OUR COURSES section############# */
 
+.accordion {
+    margin-bottom: 4%;
+}
 
+.card {
+    background-color: transparent;
+    border-color: transparent;
+}
 
+.collapse {
+    border: 2px;
+    border-color: white;
+}
+
+button.btn {
+    border-radius: 0;
+}
+h1 img.icon {
+    display: inline;
+    max-width: 60px;
+    padding: 0 15px;
+}
+
+h1.btn {
+    text-align: left;
+}
+.btn-link:hover {
+    text-decoration: none;
+}
 
 
 /* ##########CONTACT US SECTION########### */
@@ -547,13 +575,6 @@ h3.singleChart {
     margin-top: 2%;
     text-align: left;
 }
-
-p.singleChart {
-
-}
-
-
-
 
 /* ##########FOOTER STYLING######### */
 
