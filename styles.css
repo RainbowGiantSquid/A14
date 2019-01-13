@@ -31,6 +31,47 @@ body {
     background-repeat: no-repeat;
     background: linear-gradient(#0A1C58, #3D1A45) no-repeat;
 }
+section {
+    margin: 2% 0;
+}
+/* ########general text styling######### */
+
+h1 {
+    color: white;
+    font-family: 'Frank Ruhl Libre', serif;
+    /* for responsive font sieze */
+    font-size: 9vmin;
+    text-align: center;
+    line-height: 100%;
+    font-weight: bold;
+    margin: 4% 0;
+}
+h3 {
+    color: white;
+    font-family: 'Frank Ruhl Libre', serif;
+    /* for responsive font sieze */
+    font-size: 6vmin;
+    text-align: center;
+    line-height: 110%;
+    font-weight: bold;
+    margin: 4% 0;
+
+}
+
+p {
+    color: white;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    margin: 4% 0;
+    text-align: left;
+}
+
+/* ########overiting Bootstrap styles######### */
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
 
 /* navigation menu */
 
@@ -63,7 +104,6 @@ ul.topnav li.topnav-logo {
 ul.topnav img.logo {
     padding: 10px 10px 0 12px;
     max-height: 60px;
-    box-sizing: content-box;
 }
 
 ul.topnav li.topnav-right {
@@ -156,7 +196,7 @@ ul.topnav li.hamburgerIcon {
         color: white;
     }
     /* dresses up LOG IN button so behaves as the rest of the menu when on <700px screen width */
-    #bottom.container {
+    #bottom.containerBox {
         padding: 0 16px 36px 16px;
         margin-bottom: 8px;
     }
@@ -193,8 +233,9 @@ button {
     border: none;
     cursor: pointer;
     font-family: 'Mukta Malar', Helvetica, sans-serif;
+    text-transform: capitalize;
     font-size: 16px;
-    width: 100%;
+    width: 96%;
 }
 
 button:hover {
@@ -202,15 +243,14 @@ button:hover {
     background-color: #F79A00;
 }
 
-.buttonSubmit {
-    margin: 14px 0 14px;
+.buttonLogin {
+    margin: 14px 0;
+    padding: 14px;
 }
 
 /* Extra styles for the cancel button */
 
 .signupbtn {
-    width: auto;
-    padding: 10px 18px;
     background-color: #0A1C58;
     color: #F79A00;
 }
@@ -223,16 +263,18 @@ button:hover {
     position: relative;
 }
 
-img.avatar {
+img.headLogo {
     width: 12%;
 }
 
-.container {
+.containerText, .containerBox {
     padding: 16px;
 }
 
-#bottom.container {
+
+#bottom.containerBox {
     padding-top: 0;
+    padding-bottom: 2%;
 }
 
 span.psw {
@@ -243,7 +285,7 @@ span.psw {
 
 /* The Modal (background) */
 
-.modal {
+.modal1 {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -271,7 +313,7 @@ span.psw {
 
 /* Modal Content/Box */
 
-.modal-content {
+.modal1-content1 {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     /* 5% from the top, 15% from the bottom and centered */
@@ -330,44 +372,16 @@ span.psw {
         display: block;
         float: none;
     }
-    .cancelbtn {
+    .signupbtn {
         width: 100%;
+        margin-left: 5%;
     }
 }
 
-/* ########general text styling######### */
-
-h1 {
-    color: white;
-    font-family: 'Frank Ruhl Libre', serif;
-    /* for responsive font sieze */
-    font-size: 7vmin;
-    text-align: center;
-    line-height: 100%;
-}
-h3 {
-    color: white;
-    font-family: 'Frank Ruhl Libre', serif;
-    /* for responsive font sieze */
-    font-size: 5vmin;
-    text-align: center;
-    line-height: 110%;
-
-}
-
-
-p {
-    color: white;
-    font-family: 'Mukta Malar', Helvetica, sans-serif;
-    font-size: 3.5vmin;
-    text-align: left;
-    line-height: 120%;
-    margin: 0;
-}
 
 /* #######About section######## */
 
-section.textSection {
+section.pageSection {
     max-width: 100%;
     margin: 0 8% 0 8%;
 }
@@ -381,7 +395,7 @@ section.textSection {
     flex-direction: row;
 }
 .singleChart {
-    width: 30%;
+    width: 33%;
     margin-bottom: 1%;
     padding: 0 2% 2%;
 
@@ -393,6 +407,13 @@ section.textSection {
     }
     .singleChart {
         width: 86%;
+    }
+    #containerBox.singleChart {
+        min-width: 86%;
+    }
+    #contact.pageSection {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -439,33 +460,6 @@ section.textSection {
     text-anchor: middle;
 }
 
-/* ##########FOOTER STYLING######### */
-
-footer {
-    color: white;
-    font-family: 'Mukta Malar', Helvetica, sans-serif;
-    font-size: 3.2vmin;
-    text-transform: capitalize;
-    line-height: 120%;
-}
-
-.footnav {
-    margin: 0;
-    padding: 0;
-}
-
-ul.footnav li {
-    list-style: none;
-    background-color: #0D0D0D;
-}
-
-ul.footnav li a {
-    color: white;
-    font-family: 'Mukta Malar', Helvetica, sans-serif;
-    font-size: 16px;
-    text-transform: capitalize;
-    line-height: 120%;
-}
 
 /* #######CAROUSEL STYLING####### */
 
@@ -495,14 +489,13 @@ h2 {
 }
 .d-block {
     max-width: 75%;
-    margin-left: 12%;
     margin-block-end: -1%;
     margin-block-start: -1%;
+    margin-left: 12%;
 }
 
 .d-md-block {
     max-width: 75%;
-    margin-left: 12%;
 }
 
 @media screen and (max-width: 750px) {
@@ -523,9 +516,65 @@ h2 {
 }
 
 .carousel-caption {
-    right: 0;
-    left: 0;
     bottom: 25px;
     padding: 6% 2%;
 }
 
+
+
+
+
+
+/* ##########CONTACT US SECTION########### */
+/* media Query for this container are with singleChart at the top */
+#contact.pageSection {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+#containerBox.singleChart {
+    width: 50%;
+    padding: 2%;
+}
+
+h3.singleChart {
+    margin: 0;
+    margin-top: 2%;
+    text-align: left;
+}
+
+p.singleChart {
+
+}
+
+
+
+
+/* ##########FOOTER STYLING######### */
+
+footer {
+    color: white;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
+    font-size: 3.2vmin;
+    text-transform: capitalize;
+    line-height: 120%;
+    text-align: left;
+}
+
+.footnav {
+    margin: 0;
+    padding: 0;
+}
+
+ul.footnav li {
+    list-style: none;
+    background-color: #0D0D0D;
+}
+
+ul.footnav li a {
+    color: white;
+    font-family: 'Mukta Malar', Helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 120%;
+}
