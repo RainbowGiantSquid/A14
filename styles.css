@@ -198,8 +198,13 @@ ul.topnav li.hamburgerIcon {
     /* dresses up LOG IN button so behaves as the rest of the menu when on <700px screen width */
     #bottom.containerBox {
         padding: 0 16px 36px 16px;
-        margin-bottom: 8px;
+        margin-bottom: 25px;
     }
+    button.buttonLogin , button.signupbtn {
+        width: 88%;
+        min-width: 88%;
+    }
+   
     /* adjusting landing page image */
 }
 
@@ -274,7 +279,7 @@ img.headLogo {
 
 #bottom.containerBox {
     padding-top: 0;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
 }
 
 span.psw {
