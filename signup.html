@@ -21,9 +21,8 @@
 
         gtag('config', 'UA-132357882-1');
     </script>
-
 </head>
-
+<!-- ********SAME MENU AS index.html linked to index.JS to reduce the number of http requests********** -->
 <body>
     <nav>
         <ul class="topnav" id="dropdownClick">
@@ -66,7 +65,7 @@
             </form>
         </div>
     </div>
-
+<!-- ***********FORM SECTION FOR SIGN UP SERVICES********** -->
     <section>
         <div class="container" id="signup">
             <form action="/action_page.php">
@@ -87,13 +86,14 @@
                     <input type="text" placeholder="Your last name" name="email" required>
                     <br>
                     <br>
+                    <!-- ******user type sign up which will give access to different service***** -->
                     <label for="usertype">I am a:</label>
                     <br>
                     <br>
                     <div class="radioFlex">
-                    <div><input type="radio" name="user" value="student"><label>Student</label></div>
-                    <div><input type="radio" name="user" value="parent"><label>Parent</label></div>
-                    <div><input type="radio" name="user" value="teacher"><label>Teacher</label></div>
+                        <div><input type="radio" name="user" value="student"><label>Student</label></div>
+                        <div><input type="radio" name="user" value="parent"><label>Parent</label></div>
+                        <div><input type="radio" name="user" value="teacher"><label>Teacher</label></div>
                     </div>
                     <br>
                     <br>
@@ -120,7 +120,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="dropdownMenu.js"></script>
+    <script type="text/javascript" src="index.html"></script>
 </body>
 
 </html>
