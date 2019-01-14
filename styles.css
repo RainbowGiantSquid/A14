@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
-nav, header, footer, {
+nav, footer {
     display: block;
     font-family: 'Mukta Malar', Helvetica, sans-serif;
     font-family: 'Frank Ruhl Libre', serif;
@@ -16,23 +16,9 @@ body {
     padding: 0;
     margin-top: -16px;
     text-align: center;
-    background: #0A1C58;
-    /* for super-old browsers */
-    /* gradient for old browsers */
-    background: -moz-linear-gradient(top, #0A1C58 0%, #3D1A45 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #0A1C58 0%, #3D1A45 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #0A1C58 0%, #3D1A45 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0A1C58', endColorstr='#3D1A45', GradientType=0);
-    /* IE6-9 */
-    background-repeat: no-repeat;
+    background: #0A1C58; /* for old browsers */
     background: linear-gradient(#0A1C58, #3D1A45) no-repeat;
-}
 
-section {
-    margin: 2% 0;
 }
 
 /* ########general text styling######### */
@@ -79,6 +65,7 @@ p {
 nav {
     margin: 0;
     line-height: 3;
+    padding-top: 14px;
     z-index: 10;
     position: fixed;
     min-width: 100%;
@@ -348,17 +335,7 @@ span.psw {
 /* keyframes for the Zoom Animation */
 
 .animate {
-    -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-    to {
-        -webkit-transform: scale(1)
-    }
 }
 
 @keyframes animatezoom {
@@ -416,7 +393,7 @@ section.pageSection {
     #containerBox.singleChart {
         min-width: 86%;
     }
-    #contact.pageSection {
+    #info.contactFlex {
         flex-direction: column;
         align-items: center;
     }
@@ -479,11 +456,6 @@ section.pageSection {
     background-color: #0A1C58;
 }
 
-.d-block {
-    max-width: 75%;
-    margin-left: 10%;
-}
-
 h2 {
     color: #F79A00;
     font-family: 'Frank Ruhl Libre', serif;
@@ -491,8 +463,9 @@ h2 {
     text-align: center;
     margin: 0;
 }
-
+/* Overriting carusel properties */
 .d-block {
+    margin-left: 10%;
     max-width: 75%;
     margin-block-end: -1%;
     margin-block-start: -1%;
@@ -528,12 +501,13 @@ h2 {
 /* #############OUR COURSES section############# */
 
 .accordion {
-    margin-bottom: 4%;
+    margin: 0 12% 5% 12%;
 }
 
 .card {
     background-color: transparent;
     border-color: transparent;
+
 }
 
 .collapse {
@@ -541,27 +515,40 @@ h2 {
     border-color: white;
 }
 
+button label.acrd {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 5vw;
+    color: whitesmoke;
+
+}
+
 button.btn {
     border-radius: 0;
 }
 
-h1 img.icon {
-    display: inline;
-    max-width: 60px;
-    padding: 0 15px;
+button img.icon {
+    padding-top: 3px;
+   float: left;
+   max-width: 13%;
 }
 
 .btn-link:hover {
     text-decoration: none;
 }
 
+
 /* ##########CONTACT US SECTION########### */
+
 
 /* media Query for this container are with singleChart at the top */
 
-#contact.pageSection {
+#info.contactFlex {
     display: flex;
     margin-bottom: 3%;
+}
+
+h1 {
+    display: block;
 }
 
 #containerBox.singleChart {
@@ -573,6 +560,19 @@ h3.singleChart {
     margin: 0;
     margin-top: 2%;
     text-align: left;
+}
+
+iframe {
+    width: 700px;
+    height: 320px;
+    align-content: flex-start;
+    border: none;
+}
+
+@media screen and (max-width: 800px) {
+    iframe{
+        width: 260px;
+    }
 }
 
 /* ##########FOOTER STYLING######### */
@@ -618,6 +618,7 @@ ul.footnav li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 2%;
 }
 
 button.btn-twitter {
@@ -652,5 +653,5 @@ button.btn-instagram {
 .endCaption {
     padding: 0;
     margin:0;
-    font-size: 11px;
+    font-size: 12px;
 }

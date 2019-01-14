@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> or <html lang="ta">
+<html lang="en">
 
 <head>
     <title>A14 Academics</title>
@@ -76,7 +76,7 @@
     </div>
     <!-- *******LANDING PAGE/ HOME******* -->
     <section class="landingPage" id="home">
-        <img class="landingImg" src="images/mockup images/Sri_Lanka.png" alt="picture of school children at A14">
+        <img class="landingImg" src="images/mockup_images/Sri_Lanka.png" alt="picture of school children at A14">
         <div class="mainCarousel" id="overtop">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="position:absolute;margin-top: -30%">
                 <ol class="carousel-indicators">
@@ -106,6 +106,7 @@
                 </div>
             </div>
         </div>
+        <!-- lepftover bootstrap template navigation indicators - in case client wants to change this -->
         <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -114,10 +115,9 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a> -->
-        </div>
     </section>
     <section class="pageSection" id="about">
-        <div class="containerText" id="about">
+        <div class="containerText">
             <h1>What's our difference?</h1>
             <p>A14 Academics is a registered charity which aims to provide high quality and low cost education to
                 primary and secondary school pupils in the UK via our Tuition Centres. Across all our educational
@@ -178,9 +178,8 @@
             </div>
         </div>
     </section>
-    </section>
     <section class="pageSection" id="courses">
-        <div class="containerText" id="courses">
+        <div class="containerText">
             <h1>Our courses taught in English and Tamil in South London</h1>
             <p>A14 Academics is a registered charity which aims to provide high quality and low cost education to
                 primary and secondary school pupils in the UK via our Tuition Centres. Across all our educational
@@ -194,12 +193,11 @@
         <div class="accordion" id="accordionExample">
             <div class="card">
                 <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                            <h1><img class="icon" src="images/icons/A14_Icons_001-maths.png">Maths &#9662;</h1>
-                        </button>
-                    </h2>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition">
+                        <label class="acrd">Maths &#9662;</label>
+                    </button>
                 </div>
 
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -228,13 +226,12 @@
             </div>
             <div class="card">
                 <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                            aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
 
-                            <h1><img class="icon" src="images/icons/A14_Icons_001-english.png">English &#9662;</h1>
-                        </button>
-                    </h2>
+                        <img class="icon" src="images/icons/A14_Icons_001-english.png" alt="icon for Enlish tuition">
+                        <label class="acrd">English &#9662;</label>
+                    </button>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
@@ -262,13 +259,11 @@
             </div>
             <div class="card">
                 <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                            aria-expanded="false" aria-controls="collapseThree">
-
-                            <h1><img class="icon" src="images/icons/A14_Icons_001-gcse.png">GCSE &#9662;</h1>
-                        </button>
-                    </h2>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <img class="icon" src="images/icons/A14_Icons_001-gcse.png" alt="icon for GSE courses">
+                        <label class="acrd">GCSE &#9662;</label>
+                    </button>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
@@ -287,28 +282,30 @@
             </div>
         </div>
     </section>
-    <h1>Contact us</h1>
+    <br>
+    <br>
     <section class="pageSection" id="contact">
-        <div class="singleChart" id="containerBox">
-            <p><b>Get in touch</b></p>
-            <p>
-                We would love to hear from you. <br>
-                Whether it's via phone :<br>
-                0207######
-            </p>
-            <p>
-                Or email :<br><a href="mailto:A14@gmail.com">bla@blabla.co.uk</a>
-            </p>
-            <address>
-                <p>You can also visit us at :<br>A14 Academy<br>
-                    453 Bromley Road, <br>Bromley, BR1 4PH
+        <h1>Contact us</h1>
+        <div class="contactFlex" id="info">
+            <div class="singleChart">
+                <p><b>Get in touch</b></p>
+                <p>
+                    We would love to hear from you. <br>
+                    Whether it's via phone :<br>
+                    0207######
                 </p>
-            </address>
-        </div>
-        <div class="singleChart" id="containerBox">
-            <iframe width='100%' height='80%' id='mapcanvas' src='https://maps.google.com/maps?q=453%20Bromley%20road,%20br1%204ph&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed'
-                frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>
-
+                <p>
+                    Or email :<br><a href="mailto:A14@gmail.com">bla@blabla.co.uk</a>
+                </p>
+                <address>
+                    <p>You can also visit us at :<br>A14 Academy<br>
+                        453 Bromley Road, <br>Bromley, BR1 4PH
+                    </p>
+                </address>
+            </div>
+            <div class="singleChart">
+                <iframe src='https://maps.google.com/maps?q=453%20Bromley%20road,%20br1%204ph&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed'></iframe>
+            </div>
         </div>
     </section>
 
@@ -318,7 +315,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 <footer>
     <div class="socialFlex">
@@ -336,8 +333,10 @@
             <a href=""><button class="btn-instagram">I</button></a>
         </div>
     </div>
-    <h7 class="endCaption">built and designed by <a href="https://twitter.com/dagakukla">Dagmara Kukla</a> all rights
-        reserved.</h7>
+        <p class="endCaption">built and designed by <a href="https://twitter.com/dagakukla">Dagmara Kukla</a> all
+            rights
+            reserved.
+        </p>
 </footer>
 
 </html>
