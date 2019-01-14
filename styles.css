@@ -365,6 +365,7 @@ span.psw {
 section.pageSection {
     max-width: 100%;
     margin: 0 8% 0 8%;
+    padding-bottom: 2%;
 }
 
 /* percentage circle with css keyframes based on https://codepen.io/sergiopedercini/pen/jmKdbj */
@@ -465,10 +466,7 @@ h2 {
 }
 /* Overriting carusel properties */
 .d-block {
-    margin-left: 10%;
     max-width: 75%;
-    margin-block-end: -1%;
-    margin-block-start: -1%;
     margin-left: 12%;
 }
 
@@ -569,7 +567,7 @@ iframe {
     border: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     iframe{
         width: 260px;
     }

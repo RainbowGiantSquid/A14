@@ -22,8 +22,7 @@ nav {
     z-index: 1;
     position: fixed;
     min-width: 100%;
-    margin-top: -180px;
-
+    margin-top: -157px; 
 }
 
 nav ul {
@@ -58,7 +57,7 @@ section {
 
 .container {
     margin: 0; 
-    margin-top: 180px;
+    margin-top: 140px;
     padding: 16px;
     text-align: left;
 }
