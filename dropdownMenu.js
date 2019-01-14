@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
   };
 });
 
-$('.topnav li a, button').click(function () {
+$('.topnav li a, .topnav li button').click(function () {
   if ($('#dropdownClick').hasClass('responsive')) {
     $('#dropdownClick').removeClass('responsive');
   } else {

@@ -7,7 +7,6 @@ html {
 nav, header, footer, {
     display: block;
     font-family: 'Mukta Malar', Helvetica, sans-serif;
-    font-family: 'Comfortaa', Helvetica, sans-serif;
     font-family: 'Frank Ruhl Libre', serif;
 }
 
@@ -40,7 +39,7 @@ h1 {
     color: white;
     font-family: 'Frank Ruhl Libre', serif;
     /* for responsive font sieze */
-    font-size: 9vmin;
+    font-size: 7vmin;
     text-align: center;
     line-height: 100%;
     font-weight: bold;
@@ -50,7 +49,7 @@ h3 {
     color: white;
     font-family: 'Frank Ruhl Libre', serif;
     /* for responsive font sieze */
-    font-size: 6vmin;
+    font-size: 5.5vmin;
     text-align: center;
     line-height: 110%;
     font-weight: bold;
@@ -274,6 +273,7 @@ img.headLogo {
 
 .containerText, .containerBox {
     padding: 16px;
+    margin: 0 2%;
 }
 
 
@@ -550,9 +550,6 @@ h1 img.icon {
     padding: 0 15px;
 }
 
-h1.btn {
-    text-align: left;
-}
 .btn-link:hover {
     text-decoration: none;
 }

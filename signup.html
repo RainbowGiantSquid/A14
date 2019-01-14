@@ -1,27 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>login A14 Academics</title>
+    <title>Signup A14 Academics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/A14_logosq.png">
+    <!-- stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
+    <link rel="stylesheet" href="signupstyles.css">
+    <!-- setting up fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Mukta+Malar" rel="stylesheet">
+    <!-- setting up js jquery -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132357882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132357882-1');
+    </script>
+
 </head>
 
 <body>
-    <nav class="back">
-        <ul class="topnav">
-            <li class="topnav-logo"><img class="logo" src="images/A14_logo.png" alt="A14 logo"></li>
-            <li><a href="index.html">back to A14 academics</a></li>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li class="topnav-logo"><img class="logo" src="images/A14_logo.png" alt="A14 Academics logo"></li>
+            <li class="topnav-academics"><a href="index.html">ACADEMY</a></li>
+            <!-- *************LAST MENU ITEM it's a buton with login window pop-up in JS************* -->
+            <li class="topnav-right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;height: 50px;">LOG
+                    IN</button></li>
+            <!-- ***********HAMBURGER MENU - CSS media query*********** -->
+            <li class="hamburgerIcon"><a href="javascript:void(0);">&#9776;</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <h1 class="large">A14<br>LOG IN</h1>
-        <form>
-            <h2>USERNAME</h2>
-            <input class="inputbox" name="username" type="text" placeholder="username">
-            <h2>PASSWORD</h2>
-            <input class="inputbox" name="password" type="password" placeholder="password">
-        </form>
-        <p>not a student yet? <a href="signup.html">Sign up</a> or book your <a href="">taster session here</a>.</p>
-    </container>
+
+    <!-- Bulid using code modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal -->
+    <div class="loginPop">
+        <div id="id01" class="modal1">
+            <form class="modal1-content1 animate" action="/action_page.php">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="images/A14_logo.png" alt="A14 Academics logo" class="headLogo">
+                </div>
+                <div class="containerBox">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button class="buttonLogin" type="submit">LOG IN</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="containerBox" id="bottom">
+                    <button type="button" onclick="location.href='signup.html';" .style.display='none' class="signupbtn">SIGN
+                        UP</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section>
+        <div class="container" id="signup">
+            <form action="/action_page.php">
+                <div class="imgcontainer">
+                    <img src="images/A14_logo.png" alt="A14 Academics logo" class="headLogo">
+                </div>
+                <div class="containerBox">
+                    <label for="uname">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="Email">Email</label>
+                    <input type="text" placeholder="Enter email" name="email" required>
+
+                    <label for="firstname">First name</label>
+                    <input type="text" placeholder="Your first name" name="email" required>
+
+                    <label for="lastname">Last name</label>
+                    <input type="text" placeholder="Your last name" name="email" required>
+                    <br>
+                    <br>
+                    <label for="usertype">I am a:</label>
+                    <br>
+                    <br>
+                    <div class="radioFlex">
+                    <div><input type="radio" name="user" value="student"><label>Student</label></div>
+                    <div><input type="radio" name="user" value="parent"><label>Parent</label></div>
+                    <div><input type="radio" name="user" value="teacher"><label>Teacher</label></div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button class="buttonLogin" type="submit">LOG IN</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="containerBox" id="bottom">
+                    <button type="button" onclick="location.href='signup.html';" .style.display='none' class="signupbtn">SIGN
+                        UP</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dropdownMenu.js"></script>
 </body>
+
 </html>
