@@ -30,9 +30,11 @@ body {
     background-repeat: no-repeat;
     background: linear-gradient(#0A1C58, #3D1A45) no-repeat;
 }
+
 section {
     margin: 2% 0;
 }
+
 /* ########general text styling######### */
 
 h1 {
@@ -45,6 +47,7 @@ h1 {
     font-weight: bold;
     margin: 4% 0;
 }
+
 h3 {
     color: white;
     font-family: 'Frank Ruhl Libre', serif;
@@ -54,7 +57,6 @@ h3 {
     line-height: 110%;
     font-weight: bold;
     margin: 4% 0;
-
 }
 
 p {
@@ -199,11 +201,10 @@ ul.topnav li.hamburgerIcon {
         padding: 0 16px 36px 16px;
         margin-bottom: 25px;
     }
-    button.buttonLogin , button.signupbtn {
+    button.buttonLogin, button.signupbtn {
         width: 88%;
         min-width: 88%;
     }
-   
     /* adjusting landing page image */
 }
 
@@ -275,7 +276,6 @@ img.headLogo {
     padding: 16px;
     margin: 0 2%;
 }
-
 
 #bottom.containerBox {
     padding-top: 0;
@@ -383,7 +383,6 @@ span.psw {
     }
 }
 
-
 /* #######About section######## */
 
 section.pageSection {
@@ -399,12 +398,13 @@ section.pageSection {
     align-items: baseline;
     flex-direction: row;
 }
+
 .singleChart {
     width: 33%;
     margin-bottom: 1%;
     padding: 0 2% 2%;
-
 }
+
 @media screen and (max-width: 750px) {
     .flexContainer {
         flex-direction: column;
@@ -465,7 +465,6 @@ section.pageSection {
     text-anchor: middle;
 }
 
-
 /* #######CAROUSEL STYLING####### */
 
 .maincarousel {
@@ -479,6 +478,7 @@ section.pageSection {
 .carousel-indicators li {
     background-color: #0A1C58;
 }
+
 .d-block {
     max-width: 75%;
     margin-left: 10%;
@@ -490,8 +490,8 @@ h2 {
     font-size: 5vw;
     text-align: center;
     margin: 0;
-
 }
+
 .d-block {
     max-width: 75%;
     margin-block-end: -1%;
@@ -516,7 +516,7 @@ h2 {
     margin-top: -30%
 }
 
-.carousel  {
+.carousel {
     position: initial;
 }
 
@@ -544,6 +544,7 @@ h2 {
 button.btn {
     border-radius: 0;
 }
+
 h1 img.icon {
     display: inline;
     max-width: 60px;
@@ -554,9 +555,10 @@ h1 img.icon {
     text-decoration: none;
 }
 
-
 /* ##########CONTACT US SECTION########### */
+
 /* media Query for this container are with singleChart at the top */
+
 #contact.pageSection {
     display: flex;
     margin-bottom: 3%;
@@ -577,11 +579,13 @@ h3.singleChart {
 
 footer {
     color: white;
+    background-color: #0D0D0D;
     font-family: 'Mukta Malar', Helvetica, sans-serif;
     font-size: 3.2vmin;
     text-transform: capitalize;
     line-height: 120%;
     text-align: left;
+    padding: 7px 10%;
 }
 
 .footnav {
@@ -591,7 +595,6 @@ footer {
 
 ul.footnav li {
     list-style: none;
-    background-color: #0D0D0D;
 }
 
 ul.footnav li a {
@@ -599,5 +602,55 @@ ul.footnav li a {
     font-family: 'Mukta Malar', Helvetica, sans-serif;
     font-size: 16px;
     text-transform: capitalize;
+    line-height: 3;
+}
+
+.socialFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    align-items: center;
+}
+
+#social-buttons {
+    font-family: 'Frank Ruhl Libre', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button.btn-twitter {
+    padding: 25px 0;
     line-height: 120%;
+    background-color: #1DA1F2;
+    color: whitesmoke;
+    border-radius: 35px;
+    width: 70px;
+    text-align: center;
+}
+
+button.btn-facebook {
+    padding: 25px 0;
+    line-height: 120%;
+    background-color: #4267B2;
+    color: whitesmoke;
+    border-radius: 35px;
+    width: 70px;
+    text-align: center;
+}
+
+button.btn-instagram {
+    padding: 25px 0;
+    line-height: 120%;
+    background-color: #C42B5A;
+    color: whitesmoke;
+    border-radius: 35px;
+    width: 70px;
+    text-align: center;
+}
+.endCaption {
+    padding: 0;
+    margin:0;
+    font-size: 11px;
 }
