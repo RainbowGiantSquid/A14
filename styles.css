@@ -8,17 +8,18 @@ nav, footer {
     display: block;
     font-family: 'Mukta Malar', Helvetica, sans-serif;
     font-family: 'Frank Ruhl Libre', serif;
+    box-shadow: 3px 0px 60px #1e1d26;
 }
 
 body {
     line-height: 1;
     margin: 0;
     padding: 0;
-    margin-top: -16px;
+    margin-top: -18px;
     text-align: center;
-    background: #0A1C58; /* for old browsers */
+    background: #0A1C58;
+    /* for old browsers */
     background: linear-gradient(#0A1C58, #3D1A45) no-repeat;
-
 }
 
 /* ########general text styling######### */
@@ -38,7 +39,6 @@ h3 {
     color: white;
     font-family: 'Frank Ruhl Libre', serif;
     /* for responsive font sieze */
-    font-size: 5.5vmin;
     text-align: center;
     line-height: 110%;
     font-weight: bold;
@@ -48,13 +48,13 @@ h3 {
 p {
     color: white;
     font-family: 'Mukta Malar', Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 120%;
     margin: 4% 0;
     text-align: left;
 }
 
-/* ########overiting Bootstrap styles######### */
+/* ########ovewrritten Bootstrap styles######### */
 
 *, ::after, ::before {
     box-sizing: content-box;
@@ -446,7 +446,7 @@ section.pageSection {
 /* #######CAROUSEL STYLING####### */
 
 .maincarousel {
-    margin-top: -70%;
+    margin-top: -75%;
 }
 
 #carouselExampleIndicators.carousel {
@@ -460,18 +460,22 @@ section.pageSection {
 h2 {
     color: #F79A00;
     font-family: 'Frank Ruhl Libre', serif;
-    font-size: 5vw;
-    text-align: center;
+    font-size: 4vw;
+    line-height: 1;
     margin: 0;
-}
-/* Overriting carusel properties */
-.d-block {
-    max-width: 75%;
     margin-left: 12%;
 }
 
+/* overwritten carusel styling */
+
+.d-block {
+    max-width: 60%;
+    max-height: 70%;
+    margin-left: 20%;
+}
+
 .d-md-block {
-    max-width: 75%;
+    max-width: 60%;
 }
 
 @media screen and (max-width: 750px) {
@@ -493,7 +497,7 @@ h2 {
 
 .carousel-caption {
     bottom: 25px;
-    padding: 6% 2%;
+    padding: 4% 1%;
 }
 
 /* #############OUR COURSES section############# */
@@ -505,7 +509,6 @@ h2 {
 .card {
     background-color: transparent;
     border-color: transparent;
-
 }
 
 .collapse {
@@ -515,9 +518,8 @@ h2 {
 
 button label.acrd {
     font-family: 'Frank Ruhl Libre', serif;
-    font-size: 5vw;
+    font-size: 3.5vw;
     color: whitesmoke;
-
 }
 
 button.btn {
@@ -526,17 +528,15 @@ button.btn {
 
 button img.icon {
     padding-top: 3px;
-   float: left;
-   max-width: 13%;
+    float: left;
+    max-width: 13%;
 }
 
 .btn-link:hover {
     text-decoration: none;
 }
 
-
 /* ##########CONTACT US SECTION########### */
-
 
 /* media Query for this container are with singleChart at the top */
 
@@ -568,7 +568,7 @@ iframe {
 }
 
 @media screen and (max-width: 1024px) {
-    iframe{
+    iframe {
         width: 260px;
     }
 }
@@ -648,8 +648,9 @@ button.btn-instagram {
     width: 70px;
     text-align: center;
 }
+
 .endCaption {
     padding: 0;
-    margin:0;
+    margin: 0;
     font-size: 12px;
 }

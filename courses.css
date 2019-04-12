@@ -1,0 +1,87 @@
+/* styling for courses.html */
+
+html {
+    min-height: 100%;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin-top: 150px;
+}
+
+nav {
+    margin-top: -168px;
+}
+
+section {
+    min-height: calc(100vh - 120px);
+    margin: 0 10%;
+}
+
+p.descriptionText {
+    font-size: 12;
+}
+
+/* Filter styling */
+
+div.filterCategories {
+    margin-top: -140px;
+    position: fixed;
+    float: left;
+    text-align: left;
+    z-index: 2;
+    padding: 5%;
+    box-shadow: 3px 0px 40px #07133a;
+}
+
+ul.filters {
+    list-style: none;
+    padding-left: 0;
+}
+
+h3.filters {
+    margin: 0;
+    display: block;
+    padding-bottom: 12%;
+    text-align: left;
+}
+
+label.filter {
+    color: whitesmoke;
+}
+
+/* Accordion positioning */
+
+div.accordion {
+    padding: 0 0 20% 30%;
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    div.filterCategories {
+        position: fixed;
+        display: flex;
+        align-items: flex-start;
+        background: #0A1C58;
+        margin: -150px 0 0 -10%;
+        width: 100%;
+        padding: 10% 5%;
+    }
+    p.lbl {
+        padding: 0 5%;
+        margin: 0;
+    }
+    div.accordion {
+        padding: 0 0 20% 0;
+        margin: 180px 0;
+    }
+    h3.filters {
+        position: absolute;
+    }
+}
+
+/* footer styling */
+
+.footer {
+    margin-top: 0px;
+}
