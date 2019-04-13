@@ -2,62 +2,250 @@
 <html lang="en">
 
 <head>
-    <title>A14 Academics</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="English and maths tuition in London website">
-    <meta name="author" content="Dagmara Kukla">
-    <link rel="shortcut icon" href="images/A14_logosq.png">
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <!-- setting up fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Mukta+Malar" rel="stylesheet">
-    <!-- setting up js jquery -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132357882-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <title>A14 Academics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="English and maths tuition in London website">
+  <meta name="author" content="Dagmara Kukla">
+  <link rel="shortcut icon" href="images/A14_logosq.png">
+  <!-- stylesheets -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="book.css">
+  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Mukta+Malar" rel="stylesheet" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-132357882-1');
-    </script>
+    gtag('config', 'UA-132357882-1');
+  </script>
 
 </head>
-<body>
-        <nav>
-                <ul class="topnav" id="dropdownClick">
-                  <li class="topnav-logo">
-                    <img
-                      class="logo"
-                      src="images/A14_logo.png"
-                      alt="A14 Academics logo"
-                    />
-                  </li>
-                  <li class="topnav-academics"><a href="#home">ACADEMY</a></li>
-                  <li><a href="#about">ABOUT A14</a></li>
-                  <li><a href="courses.html">COURSES</a></li>
-                  <li><a href="book.html">BOOK ONLINE</a></li>
-                  <li><a href="#contact">CONTACT</a></li>
-                  <li class="topnav-right"><a href="signup.html">Sign up</a></li>
-                  <!-- *************LAST MENU ITEM it's a buton with login window pop-up in JS************* -->
-                  <li class="topnav-right">
-                    <button data-login-btn style="width:auto;height: 50px;">
-                      LOG IN
-                    </button>
-                  </li>
-          
-                  <!-- ***********HAMBURGER MENU - CSS media query*********** -->
-                  <li class="hamburgerIcon"><a href="javascript:void(0);">&#9776;</a></li>
-                </ul>
-              </nav>
-    <h1>coming up soon :)</h1>
-    <img src="https://i.kym-cdn.com/photos/images/newsfeed/000/117/021/enhanced-buzz-28895-1301694293-0.jpg" style="padding-bottom: 20px;">
-    <div class="containerBox" id="bottom">
-            <button type="button" onclick="location.href='index.html';" .style.display='none' class="signupbtn">TAKE ME BACK!</button>
 
-            <script type="text/javascript" src="index.js"></script>
-    </body>
+<body>
+  <nav class="topnav">
+    <ul class="topnav" id="dropdownClick">
+      <li class="topnav-logo">
+        <img class="logo" src="images/A14_logo.png" alt="A14 Academics logo" />
+      </li>
+      <li class="topnav-academics"><a href="index.html">ACADEMY</a></li>
+      <li><a href="index.html">ABOUT A14</a></li>
+      <li><a href="courses.html">COURSES</a></li>
+      <li><a href="book.html">BOOK ONLINE</a></li>
+      <li><a href="index.html">CONTACT</a></li>
+      <li class="topnav-right"><a href="signup.html">Sign up</a></li>
+      <!-- *************LAST MENU ITEM it's a buton with login window pop-up in JS************* -->
+      <li class="topnav-right">
+        <button data-login-btn style="width:auto;height: 50px;">
+          LOG IN
+        </button>
+      </li>
+
+      <!-- ***********HAMBURGER MENU - CSS media query*********** -->
+      <li class="hamburgerIcon"><a href="javascript:void(0);">&#9776;</a></li>
+    </ul>
+  </nav>
+  <main class="main-container">
+
+    <section class="section">
+      <h2 class="text-center">Courses</h2>
+      <div class="products">
+        <!--
+					https://www.iconfinder.com/iconsets/beverage
+					Creative Commons (Attribution 3.0 Unported)
+					https://creativemarket.com/eucalyp
+				-->
+        <div class="product">
+          <img class="product__image" src="images/products/math.svg" alt="maths4">
+          <h2 class="product__name">Maths Tuition Course</h2>
+          <h2 class="product__sub">Year 4</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/math.svg" alt="maths5">
+          <h2 class="product__name">Maths Tuition Course</h2>
+          <h2 class="product__sub">Year 5</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/math.svg" alt="maths6">
+          <h2 class="product__name">Maths Tuition Course</h2>
+          <h2 class="product__sub">Year 6</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/math.svg" alt="maths7">
+          <h2 class="product__name">Maths Tuition Course</h2>
+          <h2 class="product__sub">Year 7</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/math.svg" alt="maths8">
+          <h2 class="product__name">Maths Tuition Course</h2>
+          <h2 class="product__sub">Year 8</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/math.svg" alt="maths9">
+          <h2 class="product__name">Maths Tuition Course</h2>
+          <h2 class="product__sub">Year 9</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/math.svg" alt="maths10">
+          <h2 class="product__name">Maths Tuition Course</h2>
+          <h2 class="product__sub">Year 10</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/math.svg" alt="maths11">
+          <h2 class="product__name">Maths Tuition Course</h2>
+          <h2 class="product__sub">Year 11</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/english.svg" alt="english4">
+          <h2 class="product__name">English Tuition Course</h2>
+          <h2 class="product__sub">Year 4</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/english.svg" alt="english5">
+          <h2 class="product__name">English Tuition Course</h2>
+          <h2 class="product__sub">Year 5</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/english.svg" alt="english6">
+          <h2 class="product__name">English Tuition Course</h2>
+          <h2 class="product__sub">Year 6</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/english.svg" alt="english7">
+          <h2 class="product__name">English Tuition Course</h2>
+          <h2 class="product__sub">Year 7</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/english.svg" alt="english8">
+          <h2 class="product__name">English Tuition Course</h2>
+          <h2 class="product__sub">Year 8</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/english.svg" alt="english9">
+          <h2 class="product__name">English Tuition Course</h2>
+          <h2 class="product__sub">Year 9</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/english.svg" alt="english10">
+          <h2 class="product__name">English Tuition Course</h2>
+          <h2 class="product__sub">Year 10</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/english.svg" alt="english11">
+          <h2 class="product__name">English Tuition Course</h2>
+          <h2 class="product__sub">Year 11</h2>
+          <h3 class="product__price">250.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/gcse.svg" alt="gcseYear">
+          <h2 class="product__name">GCSE Course</h2>
+          </br>
+          </br>
+          <h2 class="product__name">Whole year</h2>
+          <h3 class="product__sub">300.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/gcse.svg" alt="gcseShort">
+          <h2 class="product__name">GCSE Course</h2>
+          <h2 class="product__sub">Short course</h2>
+          <h3 class="product__price">140.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/gcse.svg" alt="gcseRevision">
+          <h2 class="product__name">GCSE Course</h2>
+          </br>
+          </br>
+          <h2 class="product__sub">Exam Revision</h2>
+          <h3 class="product__price">120.00</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+        <div class="product">
+          <img class="product__image" src="images/products/free.svg" alt="Milk">
+          <h2 class="product__name">Book a taster session</h2>
+          </br>
+          </br>
+          <h2 class="product__sub">NOW!</h2>
+          <h3 class="product__price">FREE</h3>
+          <button class="btn btn--primary" data-action="ADD_TO_CART">Add this course</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="text-center">Checkout</h2>
+      <div class="cart"></div>
+    </section>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+<footer class="footer">
+  <div class="socialFlex">
+    <div>
+      <ul class="footnav">
+        <li><a href="#home">BACK TO THE TOP</a></li>
+        <li><a href="#about">ABOUT A14</a></li>
+        <li><a href="#courses">COURSES</a></li>
+        <li><a href="">CAREERS</a></li>
+      </ul>
+    </div>
+    <div id="social-buttons">
+      <a href="https://twitter.com/a14info?lang=en"><button class="btn-twitter">T</button></a>
+      <a href="https://www.facebook.com/pages/A14-Academics/270329626415023"><button class="btn-facebook">F</button></a>
+      <a href=""><button class="btn-instagram">I</button></a>
+    </div>
+  </div>
+  <p class="endCaption">
+    built and designed by
+    <a href="https://twitter.com/dagakukla">Dagmara Kukla</a> all rights
+    reserved.
+  </p>
+  <div class="push"></div>
+</footer>
+
+
 </html>
