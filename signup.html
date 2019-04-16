@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/A14_logosq.png">
     <!-- stylesheets -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="signupstyles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/signupstyles.css">
     <!-- setting up fonts -->
     <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Mukta+Malar" rel="stylesheet">
     <!-- setting up js jquery -->
@@ -23,13 +23,15 @@
     </script>
 </head>
 <!-- ********SAME MENU AS index.html linked to index.JS to reduce the number of http requests********** -->
+
 <body>
     <nav>
         <ul class="topnav" id="dropdownClick">
             <li class="topnav-logo"><img class="logo" src="images/A14_logo.png" alt="A14 Academics logo"></li>
             <li class="topnav-academics"><a href="index.html">BACK TO A14</a></li>
             <!-- *************LAST MENU ITEM it's a buton with login window pop-up in JS************* -->
-            <li class="topnav-right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;height: 50px;">LOG
+            <li class="topnav-right"><button onclick="document.getElementById('id01').style.display='block'"
+                    style="width:auto;height: 50px;">LOG
                     IN</button></li>
             <!-- ***********HAMBURGER MENU - CSS media query*********** -->
             <li class="hamburgerIcon"><a href="javascript:void(0);">&#9776;</a></li>
@@ -41,7 +43,8 @@
         <div id="id01" class="modal1">
             <form class="modal1-content1 animate" action="/action_page.php">
                 <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
                     <img src="images/A14_logo.png" alt="A14 Academics logo" class="headLogo">
                 </div>
                 <div class="containerBox">
@@ -58,14 +61,15 @@
                 </div>
 
                 <div class="containerBox" id="bottom">
-                    <button type="button" onclick="location.href='signup.html';" .style.display='none' class="signupbtn">SIGN
+                    <button type="button" onclick="location.href='signup.html';" .style.display='none'
+                        class="signupbtn">SIGN
                         UP</button>
                     <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
             </form>
         </div>
     </div>
-<!-- ***********FORM SECTION FOR SIGN UP SERVICES********** -->
+    <!-- ***********FORM SECTION FOR SIGN UP SERVICES********** -->
     <section>
         <div class="container" id="signup">
             <form action="/action_page.php">
@@ -110,9 +114,11 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>

@@ -97,17 +97,25 @@ button {
 }
 
 .btn {
-  padding: .65rem 1rem;
-  transition: .3s all;
+  line-height: 0.2;
+  /* padding: .65rem 1rem;
+  transition: .3s all; */
 }
 
 .btn--small {
-  padding: .2rem .4rem;
+  height: 4px;
+  width: 4px;
 }
 
 .btn--primary {
   color: var(--color-white);
   background: var(--color-primary);
+}
+
+.btn--yellow {
+  background: #f79a00;
+  color: var(--color-white);
+  max-width: 40%;
 }
 
 .btn--primary:hover:not(:disabled), .btn--primary:focus {
@@ -118,11 +126,11 @@ button {
 .btn--danger {
   color: var(--color-white);
   background: var(--color-danger);
+  max-width: 20%;
 }
 
 .btn--danger:hover:not(:disabled), .btn--danger:focus {
   outline: none;
-  box-shadow: 0 0 0 5px var(--color-danger-light);
 }
 
 /* ----------------- Products ----------------- */

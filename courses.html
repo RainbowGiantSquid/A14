@@ -12,8 +12,8 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="courses.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/courses.css" />
   <!-- setting up fonts -->
   <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Mukta+Malar" rel="stylesheet" />
   <!-- setting up js jquery -->
@@ -53,6 +53,36 @@
       <li class="hamburgerIcon"><a href="javascript:void(0);">&#9776;</a></li>
     </ul>
   </nav>
+  <div class="loginPop">
+    <div id="id01" class="modal1">
+      <form class="modal1-content1 animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span id="hbrgIcon" class="close" title="Close Modal">&times;</span>
+          <img src="images/A14_logo.png" alt="A14 Academics logo" class="headLogo" />
+        </div>
+        <div class="containerBox">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required />
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required />
+
+          <button class="buttonLogin" type="submit">LOG IN</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" />
+            Remember me
+          </label>
+        </div>
+
+        <div class="containerBox" id="bottom">
+          <button type="button" onclick="location.href='signup.html';" .style.display="none" class="signupbtn">
+            SIGN UP
+          </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <section class=courses>
     <div>
@@ -72,15 +102,15 @@
           </li>
           <li>
             <input type="checkbox" name="subject" value="english">
-            <label class="filter" for=" english">English</label>
+            <label class="filter" for="english">English</label>
           </li>
           <li>
             <input type="checkbox" name="subject" value="GCSE">
-            <label class="filter" for=" GCSE">GCSE</label>
+            <label class="filter" for="GCSE">GCSE</label>
           </li>
           <li>
             <input type="checkbox" name="subject" value="short">
-            <label class="filter" for=" short">Short</label>
+            <label class="filter" for="short">Short</label>
           </li>
 
         </ul>
@@ -88,7 +118,7 @@
         <div>
           <select id="genre">
             <option value="all">All</option>
-            <option value="4">Year 4</option>
+            <!-- <option value="4">Year 4</option>
             <option value="5">Year 5</option>
             <option value="6">Year 6</option>
             <option value="7">Year 7</option>
@@ -96,7 +126,7 @@
             <option value="9">Year 9</option>
             <option value="10">Year 10</option>
             <option value="11">Year 11</option>
-            <option value="exam">Exam prep only</option>
+            <option value="exam">Exam prep only</option> -->
           </select>
         </div>
       </div>
@@ -105,7 +135,7 @@
     <!-- ACCORDION - main descriptions of the courses -->
     <div class="accordion " id="accordionExample">
       <div class="card category maths 4 all">
-        <div class="card-header" id="headingOne">
+        <div class="card-header">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne4"
             aria-expanded="true" aria-controls="collapseOne4">
             <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition" />
@@ -113,7 +143,7 @@
           </button>
         </div>
 
-        <div id="collapseOne4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div id="collapseOne4" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -141,13 +171,13 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category maths 5 all">
-        <div class="card-header" id="headingOne">
+        <div class="card-header">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne5"
             aria-expanded="true" aria-controls="collapseOne5">
             <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition" />
@@ -155,7 +185,7 @@
           </button>
         </div>
 
-        <div id="collapseOne5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div id="collapseOne5" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -183,13 +213,13 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category maths 6 all">
-        <div class="card-header" id="headingOne">
+        <div class="card-header">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne6"
             aria-expanded="true" aria-controls="collapseOne6">
             <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition" />
@@ -197,7 +227,7 @@
           </button>
         </div>
 
-        <div id="collapseOne6" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div id="collapseOne6" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -225,13 +255,13 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category maths 7 all">
-        <div class="card-header" id="headingOne">
+        <div class="card-header">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne7"
             aria-expanded="true" aria-controls="collapseOne7">
             <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition" />
@@ -239,7 +269,7 @@
           </button>
         </div>
 
-        <div id="collapseOne7" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div id="collapseOne7" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -267,13 +297,13 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category maths 8 all">
-        <div class="card-header" id="headingOne">
+        <div class="card-header">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne8"
             aria-expanded="true" aria-controls="collapseOne8">
             <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition" />
@@ -281,7 +311,7 @@
           </button>
         </div>
 
-        <div id="collapseOne8" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div id="collapseOne8" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -309,13 +339,13 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category maths 9 all">
-        <div class="card-header" id="headingOne">
+        <div class="card-header">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne9"
             aria-expanded="true" aria-controls="collapseOne9">
             <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition" />
@@ -323,7 +353,7 @@
           </button>
         </div>
 
-        <div id="collapseOne9" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div id="collapseOne9" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -351,13 +381,13 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category maths 10 all">
-        <div class="card-header" id="headingOne">
+        <div class="card-header">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne10"
             aria-expanded="true" aria-controls="collapseOne10">
             <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition" />
@@ -365,7 +395,7 @@
           </button>
         </div>
 
-        <div id="collapseOne10" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div id="collapseOne10" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -393,13 +423,13 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category maths 11 all">
-        <div class="card-header" id="headingOne">
+        <div class="card-header">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne11"
             aria-expanded="true" aria-controls="collapseOne11">
             <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition" />
@@ -407,7 +437,7 @@
           </button>
         </div>
 
-        <div id="collapseOne11" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div id="collapseOne11" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -435,20 +465,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category english 4 all">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo4"
             aria-expanded="false" aria-controls="collapseTwo4">
             <img class="icon" src="images/icons/A14_Icons_001-english.png" alt="icon for Enlish tuition" />
             <label class="acrd">year 4 English &#9662;</label>
           </button>
         </div>
-        <div id="collapseTwo4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div id="collapseTwo4" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -476,20 +506,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category english 5 all">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo5"
             aria-expanded="false" aria-controls="collapseTwo5">
             <img class="icon" src="images/icons/A14_Icons_001-english.png" alt="icon for Enlish tuition" />
             <label class="acrd">year 5 English &#9662;</label>
           </button>
         </div>
-        <div id="collapseTwo5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div id="collapseTwo5" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -517,20 +547,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category english 6 all">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo6"
             aria-expanded="false" aria-controls="collapseTwo6">
             <img class="icon" src="images/icons/A14_Icons_001-english.png" alt="icon for Enlish tuition" />
             <label class="acrd">year 6 English &#9662;</label>
           </button>
         </div>
-        <div id="collapseTwo6" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div id="collapseTwo6" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -558,20 +588,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category english 7 all">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo7"
             aria-expanded="false" aria-controls="collapseTwo7">
             <img class="icon" src="images/icons/A14_Icons_001-english.png" alt="icon for Enlish tuition" />
             <label class="acrd">year 7 English &#9662;</label>
           </button>
         </div>
-        <div id="collapseTwo7" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div id="collapseTwo7" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -599,20 +629,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category english 8 all">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo8"
             aria-expanded="false" aria-controls="collapseTwo8">
             <img class="icon" src="images/icons/A14_Icons_001-english.png" alt="icon for Enlish tuition" />
             <label class="acrd">year 8 English &#9662;</label>
           </button>
         </div>
-        <div id="collapseTwo8" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div id="collapseTwo8" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -640,20 +670,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category english 9 all">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo9"
             aria-expanded="false" aria-controls="collapseTwo9">
             <img class="icon" src="images/icons/A14_Icons_001-english.png" alt="icon for Enlish tuition" />
             <label class="acrd">year 9 English &#9662;</label>
           </button>
         </div>
-        <div id="collapseTwo9" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div id="collapseTwo9" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -681,20 +711,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category english 10 all">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo10"
             aria-expanded="false" aria-controls="collapseTwo10">
             <img class="icon" src="images/icons/A14_Icons_001-english.png" alt="icon for Enlish tuition" />
             <label class="acrd">year 10 English &#9662;</label>
           </button>
         </div>
-        <div id="collapseTwo10" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div id="collapseTwo10" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -722,20 +752,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category english 11 all">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo11"
             aria-expanded="false" aria-controls="collapseTwo11">
             <img class="icon" src="images/icons/A14_Icons_001-english.png" alt="icon for Enlish tuition" />
             <label class="acrd">year 11 English &#9662;</label>
           </button>
         </div>
-        <div id="collapseTwo11" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div id="collapseTwo11" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>Primary & Secondary English and Maths</h3>
             <p class="descriptionText">
@@ -763,20 +793,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category GCSE 11 all">
-        <div class="card-header" id="headingThree">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree1"
             aria-expanded="false" aria-controls="collapseThree1">
             <img class="icon" src="images/icons/A14_Icons_001-gcse.png" alt="icon for GSE courses" />
             <label class="acrd">full year GCSE &#9662;</label>
           </button>
         </div>
-        <div id="collapseThree1" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div id="collapseThree1" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>GCSE Courses</h3>
             <p class="descriptionText">
@@ -798,20 +828,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category GCSE exam short all">
-        <div class="card-header" id="headingThree">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree2"
             aria-expanded="false" aria-controls="collapseThree2">
             <img class="icon" src="images/icons/A14_Icons_001-gcse.png" alt="icon for GSE courses" />
             <label class="acrd">short course GCSE &#9662;</label>
           </button>
         </div>
-        <div id="collapseThree2" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div id="collapseThree2" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>GCSE Courses</h3>
             <p class="descriptionText">
@@ -833,20 +863,20 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
       <div class="card category GCSE exam short all">
-        <div class="card-header" id="headingThree">
+        <div class="card-header">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree3"
             aria-expanded="false" aria-controls="collapseThree3">
             <img class="icon" src="images/icons/A14_Icons_001-gcse.png" alt="icon for GSE courses" />
             <label class="acrd">exam prep GCSE &#9662;</label>
           </button>
         </div>
-        <div id="collapseThree3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div id="collapseThree3" class="collapse" data-parent="#accordionExample">
           <div class="card-body">
             <h3>GCSE Courses</h3>
             <p class="descriptionText">
@@ -868,11 +898,12 @@
           </div>
         </div>
         <div class="booknowbtn">
-          <button class="booknow">
+          <button class="booknow" type="button" onclick="location.href='book.html';">
             BOOK NOW
           </button>
         </div>
       </div>
+    </div>
   </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -887,7 +918,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="index.js"></script>
-  </div>
 </body>
 <!-- ******basic footer with navigation links and social media buttons****** -->
 <footer class="footer">
