@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>A14 Academics</title>
+  <title>Courses at A14 Academics</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="English and maths tuition in London website" />
@@ -40,7 +40,7 @@
       <li><a href="index.html">ABOUT A14</a></li>
       <li><a href="courses.html">COURSES</a></li>
       <li><a href="book.html">BOOK ONLINE</a></li>
-      <li><a href="index.html">CONTACT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
       <li class="topnav-right"><a href="signup.html">Sign up</a></li>
       <!-- *************LAST MENU ITEM it's a buton with login window pop-up in JS************* -->
       <li class="topnav-right">
@@ -53,6 +53,7 @@
       <li class="hamburgerIcon"><a href="javascript:void(0);">&#9776;</a></li>
     </ul>
   </nav>
+  <!-- *******LOGIN POP-up functioning as on the landing page******* -->
   <div class="loginPop">
     <div id="id01" class="modal1">
       <form class="modal1-content1 animate" action="/action_page.php">
@@ -83,10 +84,10 @@
       </form>
     </div>
   </div>
-
+  <!-- COURSE FILTER -->
   <section class=courses>
     <div>
-      <h1> Product Filter </h1>
+      <h1 class="filters">Our courses</h1>
       <div class="filterCategories">
         <h3 class="filters">Filter by</h3>
         <p class="lbl">COURSE TYPE:</p>
@@ -97,36 +98,27 @@
             <label class="filter" for="all">All</label>
           </li>
           <li>
-            <input type="checkbox" name="subject" value="maths">
+            <input type="checkbox" name="subject" value="maths" id="maths">
             <label class="filter" for="maths">Maths</label>
           </li>
           <li>
-            <input type="checkbox" name="subject" value="english">
+            <input type="checkbox" name="subject" value="english" id="maths">
             <label class="filter" for="english">English</label>
           </li>
           <li>
-            <input type="checkbox" name="subject" value="GCSE">
+            <input type="checkbox" name="subject" value="GCSE" id="GCSE">
             <label class="filter" for="GCSE">GCSE</label>
           </li>
           <li>
-            <input type="checkbox" name="subject" value="short">
+            <input type="checkbox" name="subject" value="short" id="short">
             <label class="filter" for="short">Short</label>
           </li>
 
         </ul>
         <p class="lbl">COURSE LEVEL:</p>
         <div>
-          <select id="genre">
+          <select id="all">
             <option value="all">All</option>
-            <!-- <option value="4">Year 4</option>
-            <option value="5">Year 5</option>
-            <option value="6">Year 6</option>
-            <option value="7">Year 7</option>
-            <option value="8">Year 8</option>
-            <option value="9">Year 9</option>
-            <option value="10">Year 10</option>
-            <option value="11">Year 11</option>
-            <option value="exam">Exam prep only</option> -->
           </select>
         </div>
       </div>
@@ -139,7 +131,7 @@
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne4"
             aria-expanded="true" aria-controls="collapseOne4">
             <img class="icon" src="images/icons/A14_Icons_001-maths.png" alt="icon for maths tuition" />
-            <label class="acrd">year 4 Maths &#9662;</label>
+            <label for="year4Maths" class="acrd">year 4 Maths &#9662;</label>
           </button>
         </div>
 
@@ -924,10 +916,10 @@
   <div class="socialFlex">
     <div>
       <ul class="footnav">
-        <li><a href="#home">BACK TO THE TOP</a></li>
-        <li><a href="#about">ABOUT A14</a></li>
-        <li><a href="#courses">COURSES</a></li>
-        <li><a href="">CAREERS</a></li>
+        <li><a href="index.html">BACK TO THE TOP</a></li>
+        <li><a href="index.html">ABOUT A14</a></li>
+        <li><a href="courses.html">COURSES</a></li>
+        <li><a href="book.html">BOOK NOW!</a></li>
       </ul>
     </div>
     <div id="social-buttons">
@@ -943,6 +935,5 @@
   </p>
   <div class="push"></div>
 </footer>
-
 
 </html>

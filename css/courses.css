@@ -66,15 +66,20 @@ div.accordion {
     background: #0a1c58;
     margin: -150px 0 0 -10%;
     width: 100%;
-    padding: 10% 5%;
+    padding: 10% 0 5%;
+    font-size: 12px;
   }
   p.lbl {
-    padding: 0 5%;
+    padding: 0 2%;
     margin: 0;
   }
   div.accordion {
     padding: 0 0 20% 0;
     margin: 180px 0;
+  }
+  button label.acrd {
+    font-size: 25px;
+    line-height: 2;
   }
   h3.filters {
     display: none;
@@ -84,8 +89,7 @@ div.accordion {
 /* footer styling */
 
 .footer {
-  margin-top: 0px;
+  margin-top: 0;
 }
-button.booknow {
-  
-}
+
+button.booknow {}

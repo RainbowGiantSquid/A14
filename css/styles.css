@@ -629,6 +629,7 @@ button.btn-twitter {
   border-radius: 35px;
   width: 70px;
   text-align: center;
+  font-size: 16px;
 }
 
 button.btn-facebook {
@@ -639,6 +640,7 @@ button.btn-facebook {
   border-radius: 35px;
   width: 70px;
   text-align: center;
+  font-size: 16px;
 }
 
 button.btn-instagram {
@@ -649,6 +651,7 @@ button.btn-instagram {
   border-radius: 35px;
   width: 70px;
   text-align: center;
+  font-size: 16px;
 }
 
 .endCaption {
@@ -656,6 +659,8 @@ button.btn-instagram {
   margin: 0;
   font-size: 12px;
 }
+
+/* Styling hyperlinks */
 
 .booknow {
   color: #f79a00;
@@ -665,4 +670,14 @@ button.btn-instagram {
 .booknow:hover {
   background-color: #f79a00;
   text-decoration: none;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  resize: none;
 }

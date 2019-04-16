@@ -40,7 +40,7 @@ loginBtn.forEach(function(element) {
 // loginBtn.onclick = function (event) {
 
 //COURSES.HTML category filter
-// courses - checkbox uncheck function
+// courses - checkbox uncheck function created using http://jsfiddle.net/rc5ctjez/4/
 
 $(function() {
   var el = $('input:checkbox[name="subject"]');
@@ -68,28 +68,17 @@ function handleCheckbox(evt) {
     .filter(filter)
     .show();
 }
-// $(":input").change(function(evt) {
-//   var filter = $(":input:checked,select")
-//     .map(function(index, el) {
-//       return "." + el.value;
-//     })
-//     .toArray()
-//     .join(",");
-//   console.log(filter);
 
-//   $(".category")
-//     .hide()
-//     .filter(filter)
-//     .show();
-// });
-// BOOK ONLINE cart checkout
+// cart functionality
 
+//defining all variables
 let cart = [];
 const cartDOM = document.querySelector(".cart");
 const addToCartButtonsDOM = document.querySelectorAll(
   '[data-action="ADD_TO_CART"]'
 );
 
+//functionality on clicking add to cart button
 addToCartButtonsDOM.forEach(addToCartButtonDOM => {
   addToCartButtonDOM.addEventListener("click", () => {
     const productDOM = addToCartButtonDOM.parentNode;
@@ -104,6 +93,7 @@ addToCartButtonsDOM.forEach(addToCartButtonDOM => {
     const isInCart =
       cart.filter(cartItem => cartItem.subname === product.subname).length > 0;
 
+    //DOM manipulation through creating an HTML element to appear when add to cart was clicked
     if (!isInCart) {
       cartDOM.insertAdjacentHTML(
         "beforeend",
@@ -117,8 +107,9 @@ addToCartButtonsDOM.forEach(addToCartButtonDOM => {
       </div>
       `
       );
-      countCartTotal();
 
+      // countCartTotal(); //at the moment redundant
+      //DOM manipulation creating cart footer when items are added to cart
       if (document.querySelector(".cart-footer") === null) {
         cartDOM.insertAdjacentHTML(
           "afterend",
@@ -129,17 +120,18 @@ addToCartButtonsDOM.forEach(addToCartButtonDOM => {
         `
         );
       }
-
+      //push method to add a product to cart array
       cart.push(product);
+      //preventing from adding same item
       addToCartButtonDOM.innerText = "In Cart";
       addToCartButtonDOM.disabled = true;
-
       const cartItemsDOM = cartDOM.querySelectorAll(".cart__item");
       cartItemsDOM.forEach(cartItemDOM => {
         if (
           cartItemDOM.querySelector(".cart_item_subname").innerText ===
           product.subname
         ) {
+          //removing items from the cart
           cartItemDOM
             .querySelector('[data-action="DELETE_ITEM"]')
             .addEventListener("click", () => {
@@ -151,7 +143,7 @@ addToCartButtonsDOM.forEach(addToCartButtonDOM => {
                     cartItem => cartItem.subname !== product.subname
                   );
                   addToCartButtonDOM.innerText = "Add To Cart";
-                  addToCartButtonDOM.disabled = false;
+                  addToCartButtonDOM.disabled = false; //after removing from the cart the add to cat button enabled
                 }
               });
             });
@@ -161,9 +153,9 @@ addToCartButtonsDOM.forEach(addToCartButtonDOM => {
   });
 });
 
-function countCartTotal() {
-  let cartTotal = 0;
-  cart.forEach(cartItem => {
-    cartTotal += cartItem.price * cartItem.quantity;
-  });
-}
+// function countCartTotal() {
+//   let cartTotal = 0;
+//   cart.forEach(cartItem => {
+//     cartTotal += cartItem.price * cartItem.quantity;
+//   });
+// }
